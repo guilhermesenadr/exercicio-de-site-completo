@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap');
+@font-face {
+    font-family: OLD-ENGLISH;
+    src: url(../tipos/OldeEnglish.ttf);
+
+}
+
+:root{
+    --cor00: #d7c5eb;
+    --cor01: #a872e7;
+    --cor02: #4d0b99;
+    --cor02: #210244;
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Roboto', 'cursive';
+    --fonte-especial: 'OLD-ENGLISH', 'cursive';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:var(--fonte-padrão);
+}
+
+header{
+    width: 100%;
+    background-color: var(--cor01);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color: var(--cor00);
+
+}
+span{
+    font-family: var(--fonte-especial);
+}
+header ul li{
+    list-style: none;
+    background-color: var(--cor01);
+    border-radius: 15px;
+    border-bottom: var(--cor01);
+    text-decoration: none;
+    padding: 15px;
+}
+
+header ul li:hover{
+    background-color: var(--cor02);
+    border-bottom: var(--cor02);
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--cor00);
+}
